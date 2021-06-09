@@ -1,14 +1,37 @@
 {
   "name": "@texttree/template-rcl",
+  "author": "TextTree.org",
   "version": "0.1.0",
-  "main": "dist/index.js",
+  "description": "",
+  "keywords": [],
   "license": "MIT",
-  "private":"false",
+  "private": false,
+  "main": "dist/index.js",
   "url": "https://github.com/texttree/template-rcl",
+  "homepage": "https://github.com/texttree/template-rcl#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/texttree/template-rcl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/texttree/template-rcl/issues"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix"
+    ],
+    "*.+(json|md)": [
+      "prettier --write"
+    ]
+  },
   "scripts": {
+    "prepare": "husky install",
     "start": "styleguidist server",
     "build": "styleguidist build",
-    "prepublishOnly": "rm -fr ./dist & babel ./src --out-dir ./dist -s inline"
+    "lint": "eslint --fix .",
+    "prettier": "prettier --write .",
+    "prepublishOnly": "rm -fr ./dist & babel ./src --out-dir ./dist -s inline",
+    "precommit": "lint-staged"
   },
   "peerDependencies": {
     "@material-ui/core": "^4.x",
@@ -18,25 +41,25 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.15",
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.4",
     "@babel/preset-env": "^7.13.15",
     "@babel/preset-react": "^7.13.13",
     "@material-ui/core": "^4.11.3",
     "babel-loader": "^8.2.2",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-styleguidist": "^11.1.6",
-    "webpack": "^5.32.0"
-  },
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/texttree/template-rcl.git"
-  },
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/texttree/template-rcl/issues"
-  },
-  "homepage": "https://github.com/texttree/template-rcl#readme"
+    "react-styleguidist": "^11.1.7",
+    "webpack": "^5.38.1"
+  }
 }
