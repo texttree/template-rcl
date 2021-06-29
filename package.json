@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/texttree/template-rcl/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "lint-staged": {
     "src/**/*.js": [
       "eslint --fix"
