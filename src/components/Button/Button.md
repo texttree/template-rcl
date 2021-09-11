@@ -1,4 +1,4 @@
-Default example
+### Default example
 
 ```jsx
 import React from 'react';
@@ -7,6 +7,8 @@ import { Button } from '@texttree/template-rcl';
 
 <Button />;
 ```
+
+### Extend example
 
 ```jsx
 import React from 'react';

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button as MuiButton } from '@material-ui/core';
+import { log } from '../../utils';
 import PropTypes from 'prop-types';
 
 function Button({ text, onClick }) {
+  log('test');
   return <MuiButton onClick={onClick}>{text}</MuiButton>;
 }
 

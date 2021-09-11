@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const { name, version, url } = require('./package.json');
 
 let sections = [
@@ -8,7 +9,7 @@ let sections = [
   },
   {
     name: 'Button Block',
-    components: ['src/components/Button/Button.js', 'src/components/Button/Button.js'],
+    components: ['src/components/Button/Button.js'],
   },
 ];
 
@@ -77,5 +78,10 @@ module.exports = {
         },
       ],
     },
+    plugins: [
+      new webpack.DefinePlugin({
+        process: { env: {} },
+      }),
+    ],
   },
 };
