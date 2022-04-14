@@ -25,7 +25,7 @@ module.exports = {
       meta: [
         {
           name: 'description',
-          content: 'React component library for bible reference',
+          content: 'React component library template',
         },
       ],
       links: [
