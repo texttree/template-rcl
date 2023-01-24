@@ -36,7 +36,7 @@
     "lint": "eslint --fix .",
     "precommit": "lint-staged",
     "prepare": "husky install",
-    "prepublishOnly": "rm -fr ./dist & babel ./src --out-dir ./dist -s inline",
+    "prepublishOnly": "shx rm -rf ./dist & babel ./src --out-dir ./dist -s inline",
     "prettier": "prettier --write .",
     "release": "standard-version",
     "release:first": "standard-version --first-release",
@@ -73,8 +73,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-styleguidist": "^13.0.0",
+    "shx": "^0.3.4",
     "standard-version": "^9.5.0",
     "webpack": "^5.75.0"
-  },
-  "dependencies": {}
+  }
 }
