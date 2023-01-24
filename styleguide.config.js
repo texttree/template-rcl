@@ -28,26 +28,31 @@ module.exports = {
           content: 'React component library template',
         },
       ],
-      links: [
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Fira+Sans:400,600',
-        },
-      ],
     },
   },
   moduleAliases: { [name]: path.resolve(__dirname, 'src') },
   skipComponentsWithoutExample: true,
   sections,
-  styles: {
-    ComponentsList: {
-      isSelected: {
-        fontWeight: 'normal',
-        '&>a': {
-          fontWeight: 'bold !important',
+  styles: function styles(theme) {
+    return {
+      ComponentsList: {
+        isSelected: {
+          fontWeight: 'normal',
+          '&>a': {
+            fontWeight: 'bold !important',
+          },
         },
       },
-    },
+      Code: {
+        code: {
+          // make inline code example appear the same color as links
+          backgroundColor: '#eff1f3',
+          fontSize: 14,
+          borderRadius: '6px',
+          padding: '.2em .4em',
+        },
+      },
+    };
   },
   theme: {
     color: {
@@ -57,9 +62,7 @@ module.exports = {
       border: '#D0DAE4',
       sidebarBackground: '#fff',
     },
-    fontFamily: {
-      base: '"Fira Sans", sans-serif',
-    },
+    fontFamily: {},
   },
   exampleMode: 'expand',
   usageMode: 'expand',
@@ -67,6 +70,20 @@ module.exports = {
   getComponentPathLine(componentPath) {
     const componentName = path.basename(componentPath, '.js');
     return `import { ${componentName} } from '${name}';`;
+  },
+  updateExample(props, exampleFilePath) {
+    const { settings, lang } = props;
+    if (typeof settings?.file === 'string') {
+      const filepath = path.resolve(path.dirname(exampleFilePath), settings.file);
+      settings.static = true;
+      delete settings.file;
+      return {
+        content: fs.readFileSync(filepath, 'utf8'),
+        settings,
+        lang,
+      };
+    }
+    return props;
   },
   webpackConfig: {
     module: {

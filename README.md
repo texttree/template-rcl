@@ -1,54 +1,33 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+[![Contributors](https://img.shields.io/github/contributors/texttree/template-rcl.svg?style=for-the-badge)](https://github.com/texttree/template-rcl/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/texttree/template-rcl.svg?style=for-the-badge)](https://github.com/texttree/template-rcl/network/members)
+[![Stargazers](https://img.shields.io/github/stars/texttree/template-rcl.svg?style=for-the-badge)](https://github.com/texttree/template-rcl/stargazers)
+[![Issues](https://img.shields.io/github/issues/texttree/template-rcl.svg?style=for-the-badge)](https://github.com/texttree/template-rcl/issues)
+[![MIT License](https://img.shields.io/github/license/texttree/template-rcl.svg?style=for-the-badge)](https://github.com/texttree/template-rcl/blob/master/LICENSE)
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <a href="https://github.com/texttree/template-rcl">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/texttree/template-rcl/raw/master/images/logo.svg" alt="Logo" width="256" height="256">
   </a>
-
-<h3 align="center">project_title</h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/texttree/template-rcl"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://example.netlify.app">View Demo</a>
-    ·
-    <a href="https://github.com/texttree/template-rcl/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/texttree/template-rcl/issues">Request Feature</a>
-  </p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
+<h2><div align="center">project_title</div></h2>
+<br />
+
+<center><strong><a href="https://template-rcl.netlify.app">Explore the docs and code playground »</a></strong></center>
+<br />
+<br />
+<center>
+  <a href="https://github.com/texttree/template-rcl/issues">Report Bug · </a>
+  <a href="https://github.com/texttree/template-rcl/issues">Request Feature</a>
+</center>
+
+<br />
+<br />
 <details>
-  <summary>Table of Contents</summary>
-  <ol>
+  <summary>Table of Contents ↧</summary>
+  <ul>
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
@@ -58,7 +37,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -67,109 +45,75 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
+  </ul>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="https://github.com/texttree/template-rcl/raw/master/images/screenshot.png" alt="Projector Mode RCL Shot" width="100%">
+
+Description
 
 **Purpose**
 
-- The purpose of this project
+- **Problem**
 
-**Problem**
+- **Scope**
 
-- The problem statement
+- **Background**
 
-**Scope**
+-
 
-- What's in scope and out of scope for this project?
-
-**Background**
-
-- What led us to this point? How did we get here?
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `texttree`, `template-rcl`, `telegram`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 ### Built With
 
 - [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com)
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
+- [React Styleguidist](https://react-styleguidist.js.org/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Installation
 
-### Prerequisites
+Add the library to your React app
 
-**Data**
-what is the source of the data and data formats are covered by this project?
+- yarn
 
-This is an example of how to list things you need to use the software and how to install them.
+```bash
+yarn add @texttree/template-rcl
+```
 
 - npm
-  ```bash
-  npm install npm@latest -g
-  ```
 
-### Installation/First Steps
+```bash
+npm install @texttree/template-rcl
+```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```bash
-   git clone https://github.com/texttree/template-rcl.git
-   ```
-3. Install NPM packages
-   ```bash
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- USAGE EXAMPLES -->
 
-## Usage/Integration
+## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Example of usage
 
-_For more examples, please refer to the [Documentation](https://example.com)_ Possibly JS Docs.
+_For more examples, please refer to the [Styleguidist link](https://template-rcl.netlify.app)_
 
-[Styleguidist link](https://example.netlify.app)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-- [] Feature 1
-- [] Feature 2
-- [] Feature 3
-  - [] Nested Feature
-
 See the [open issues](https://github.com/texttree/template-rcl/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- CONTRIBUTING -->
 
@@ -188,47 +132,20 @@ If you would like to fork the repo and create a pull request.
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- LICENSE -->
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](license-url) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/texttree/template-rcl/blob/master/LICENSE) for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
 
 <!-- CONTACT -->
 
 ## Contact
 
-Your Name - [@telegram](https://t.me/telegram) - email@email_client.com
-
 Project Link: [https://github.com/texttree/template-rcl](https://github.com/texttree/template-rcl)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGMENTS -->
-
-## Acknowledgments
-
-- []()
-- []()
-- []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/texttree/template-rcl.svg?style=for-the-badge
-[contributors-url]: https://github.com/texttree/template-rcl/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/texttree/template-rcl.svg?style=for-the-badge
-[forks-url]: https://github.com/texttree/template-rcl/network/members
-[stars-shield]: https://img.shields.io/github/stars/texttree/template-rcl.svg?style=for-the-badge
-[stars-url]: https://github.com/texttree/template-rcl/stargazers
-[issues-shield]: https://img.shields.io/github/issues/texttree/template-rcl.svg?style=for-the-badge
-[issues-url]: https://github.com/texttree/template-rcl/issues
-[license-shield]: https://img.shields.io/github/license/texttree/template-rcl.svg?style=for-the-badge
-[license-url]: https://github.com/texttree/template-rcl/blob/master/LICENSE
-[product-screenshot]: images/screenshot.png
+<a style="text-align: right; display: block" href="#top">(back to top)</a>
