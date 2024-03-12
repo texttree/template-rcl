@@ -58,15 +58,13 @@
 
 Description
 
-**Purpose**
+- **Purpose**
 
 - **Problem**
 
 - **Scope**
 
 - **Background**
-
--
 
 <a style="text-align: right; display: block" href="#top">(back to top)</a>
 
