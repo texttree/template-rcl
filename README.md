@@ -7,8 +7,7 @@
 
 <div align="center">
   <a href="https://github.com/texttree/template-rcl">
-
-![template-rcl](https://socialify.git.ci/texttree/template-rcl/image?description=1&logo=https%3A%2F%2Fwww.svgrepo.com%2Fshow%2F475431%2Faudio.svg&name=1&owner=1&pattern=Charlie%20Brown&theme=Light)
+<img src="https://socialify.git.ci/texttree/template-rcl/image?description=1&logo=https%3A%2F%2Fwww.svgrepo.com%2Fshow%2F475431%2Faudio.svg&name=1&owner=1&pattern=Charlie%20Brown&theme=Light" alt="template-rcl" width="100%">
 </a>
 
 </div>
