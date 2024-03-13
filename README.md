@@ -12,7 +12,7 @@
 
 </div>
 
-<h2><div align="center">project_title</div></h2>
+<h2><div align="center">_project_title_</div></h2>
 <br />
 
 <center><strong><a href="https://template-rcl.netlify.app">Explore the docs and code playground »</a></strong></center>
@@ -55,15 +55,25 @@
 
 <img src="https://github.com/texttree/template-rcl/raw/master/images/screenshot.png" alt="Projector Mode RCL Shot" width="100%">
 
-Description
+_project_description_
 
 - **Purpose**
+  _[The goal of the project or why we're doing this]_
+
+  Example:
+  To create a preconfigured template so that we can start developing a component library right away.
 
 - **Problem**
+  _[What problems we have now and how the library will help solve them]_
+
+  Example:
+  If you start from scratch to create a library, you have to repeat the same steps, add the same libraries, copy configurations and templates from other libraries.
 
 - **Scope**
+  _[What areas are covered, what areas are not]_
 
-- **Background**
+  Example:
+  this template is mostly for texttree organization libraries to make it easier to maintain code
 
 <a style="text-align: right; display: block" href="#top">(back to top)</a>
 
