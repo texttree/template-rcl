@@ -12,7 +12,7 @@
 
 </div>
 
-<h2><div align="center">_project_title_</div></h2>
+<h2><div align="center"> project_title </div></h2>
 <br />
 
 <center><strong><a href="https://template-rcl.netlify.app">Explore the docs and code playground »</a></strong></center>
@@ -55,7 +55,7 @@
 
 <img src="https://github.com/texttree/template-rcl/raw/master/images/screenshot.png" alt="Projector Mode RCL Shot" width="100%">
 
-_project_description_
+project_description
 
 - **Purpose**
   _[The goal of the project or why we're doing this]_
@@ -114,7 +114,7 @@ Having trouble? Get help in the official [Open Components Ecosystem Discord](htt
 
 ## Usage
 
-Example of usage
+example_of_usage
 
 _For more examples, please refer to the [Styleguidist link](https://template-rcl.netlify.app)_
 
