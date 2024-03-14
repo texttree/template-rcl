@@ -23,7 +23,7 @@
     "access": "public"
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "src/**/*.jsx?": [
       "eslint --fix"
     ],
     "*.+(json|md)": [
@@ -37,7 +37,8 @@
     "precommit": "lint-staged",
     "prepare": "husky",
     "test": "jest",
-    "prepublishOnly": "shx rm -rf ./dist & babel ./src --out-dir ./dist -s inline",
+    "build:babel": "babel src --out-dir dist --ignore src/components/**/*.jsx",
+    "prepublishOnly": "rm -fr ./dist & yarn build:babel",
     "prettier": "prettier --write .",
     "release": "commit-and-tag-version",
     "release:first": "commit-and-tag-version --first-release",
