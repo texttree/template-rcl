@@ -1,10 +1,22 @@
-### If you need to set the database name, you can use the dBNameRegistration method
-
 ```jsx
-import React from 'react';
-import { useWindowScrollPosition } from '@texttree/template-rcl';
+import React from 'react'
+import { useWindowScrollPosition } from '@texttree/template-rcl'
 
-const position = useWindowScrollPosition();
+const Component = () => {
+  const position = useWindowScrollPosition()
+  return (
+    <div
+      style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      {JSON.stringify(position, null, 2)}
+    </div>
+  )
+}
 
-<>{JSON.stringify(position, null, 2)}</>;
+;<Component />
 ```

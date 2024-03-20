@@ -5,14 +5,14 @@ module.exports = {
 
   // Модули, которые Jest должен использовать для тестирования
   setupFilesAfterEnv: ['<rootDir>/setupTests.js'],
+  // preset: 'ts-jest',
 
   // Расширения файлов, которые Jest будет тестировать
-  moduleFileExtensions: ['js', 'jsx'],
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json'],
   moduleDirectories: [
     'node_modules',
     __dirname, // the root directory
   ],
 
   // Дополнительные настройки Jest
-  // Например, можно добавить покрытие кода, настройки Enzyme, и т.д.
-};
+}

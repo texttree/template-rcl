@@ -10,12 +10,6 @@
     "files.trimTrailingWhitespace": false
   },
   "eslint.format.enable": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
   "editor.formatOnSave": true,
   "editor.detectIndentation": false,
   "editor.formatOnPaste": true,
@@ -23,4 +17,8 @@
   "files.eol": "\n",
   "files.trimTrailingWhitespace": true,
   "editor.tabSize": 2,
+  "eslint.debug": true,
+  "eslint.validate": [
+    "javascript", "javascriptreact", "typescript", "typescriptreact"
+  ]
 }

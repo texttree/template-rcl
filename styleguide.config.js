@@ -1,6 +1,7 @@
-const path = require('path');
-const webpack = require('webpack');
-const { name, version, url } = require('./package.json');
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path')
+const webpack = require('webpack')
+const { name, version, url, description } = require('./package.json')
 
 let sections = [
   {
@@ -8,16 +9,20 @@ let sections = [
     content: 'README.md',
   },
   {
-    name: 'Button Block',
-    components: [
-      'src/components/Button/Button.js',
-      'src/components/hooks/useWindowScrollPosition.jsx',
-    ],
+    name: 'Components',
+    components: ['src/components/Button/Button.tsx'],
   },
-];
+  {
+    name: 'Hooks',
+    components: ['src/components/hooks/useWindowScrollPosition.tsx'],
+  },
+]
 
 module.exports = {
   components: 'src/components/**/[A-Z]*.js',
+  propsParser: require('react-docgen-typescript').withCustomConfig('./tsconfig.json', [
+    { savePropValueAsString: true },
+  ]).parse,
   ribbon: {
     url,
     text: 'Open on GitHub',
@@ -28,7 +33,7 @@ module.exports = {
       meta: [
         {
           name: 'description',
-          content: 'React component library template',
+          content: description,
         },
       ],
     },
@@ -36,7 +41,7 @@ module.exports = {
   moduleAliases: { [name]: path.resolve(__dirname, 'src') },
   skipComponentsWithoutExample: true,
   sections,
-  styles: function styles(theme) {
+  styles: function styles() {
     return {
       ComponentsList: {
         isSelected: {
@@ -55,7 +60,7 @@ module.exports = {
           padding: '.2em .4em',
         },
       },
-    };
+    }
   },
   theme: {
     color: {
@@ -71,30 +76,30 @@ module.exports = {
   usageMode: 'expand',
   pagePerSection: true,
   getComponentPathLine(componentPath) {
-    const componentName = path.basename(componentPath, '.js').split('.')[0];
-    return `import { ${componentName} } from '${name}';`;
+    const componentName = path.basename(componentPath, '.js').split('.')[0]
+    return `import { ${componentName} } from '${name}';`
   },
   updateExample(props, exampleFilePath) {
-    const { settings, lang } = props;
+    const { settings, lang } = props
     if (typeof settings?.file === 'string') {
-      const filepath = path.resolve(path.dirname(exampleFilePath), settings.file);
-      settings.static = true;
-      delete settings.file;
+      const filepath = path.resolve(path.dirname(exampleFilePath), settings.file)
+      settings.static = true
+      delete settings.file
       return {
         content: fs.readFileSync(filepath, 'utf8'),
         settings,
         lang,
-      };
+      }
     }
-    return props;
+    return props
   },
   webpackConfig: {
     module: {
       rules: [
         {
-          test: /\.jsx?$/,
+          test: /\.tsx?$/,
           exclude: /node_modules/,
-          loader: 'babel-loader',
+          loader: 'ts-loader',
         },
       ],
     },
@@ -104,4 +109,4 @@ module.exports = {
       }),
     ],
   },
-};
+}
