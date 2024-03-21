@@ -2,20 +2,30 @@
   "compilerOptions": {
     "jsx": "react",
     "allowJs": true,
+    "declaration": true, // Создавать исходный файл при компиляции
+    // "declarationDir": "./dist/types", // Папка, куда компилировать исходные файлы
     "target": "ES6", // Версия ECMAScript, которую вы хотите использовать
     "module": "CommonJS", // Тип модулей (например, commonjs, esnext)
-    "outDir": "./dist/", // Папка, куда компилировать TypeScript файлы
+    // "moduleResolution": "Node16", // Тип разрешения модулей (например, classic, node)
+    "outDir": "./dist", // Папка, куда компилировать TypeScript файлы
     "rootDir": "./src/" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
     "removeComments": true /* Do not emit comments to output. */,
     "strict": true, // Усиленная типизация
     // "lib": ["dom"], // Подключаемые библиотеки ES6 для компиляции
     "sourceMap": true, // Создавать исходный файл
     "esModuleInterop": true, // Взаимодействие с модулями ES6
-    // "isolatedModules": true, // Использовать один модуль вместо нескольких
-    // "skipLibCheck": true, // Пропустить проверку объявлений
+    "isolatedModules": true, // Использовать один модуль вместо нескольких
+    "skipLibCheck": true, // Пропустить проверку объявлений
     "forceConsistentCasingInFileNames": true // Проверка на согласованность регистра в именах файлов
     // "noImplicitAny": false // Позволить неявное приведение типов
   },
   "include": ["./src/**/*"], // Папки, в которых находятся ваши TypeScript файлы
-  "exclude": ["node_modules", "__tests__", "**/*.test.tsx", "**/*.test.ts", "dist"]
+  "exclude": [
+    "node_modules",
+    "./src/components/hooks",
+    "__tests__",
+    "*.test.tsx",
+    "*.test.ts",
+    "dist"
+  ]
 }

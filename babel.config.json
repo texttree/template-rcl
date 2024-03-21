@@ -1,14 +1,3 @@
 {
-  "presets": [
-    "@babel/preset-react",
-    "@babel/preset-typescript",
-    [
-      "@babel/preset-env",
-      {
-        "modules": "commonjs",
-        "useBuiltIns": "usage",
-        "corejs": 3.36
-      }
-    ]
-  ]
+  "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"]
 }
