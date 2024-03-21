@@ -3,7 +3,6 @@ import { MouseEventHandler } from 'react'
 export type ScrollPosition = {
   x: number
   y: number
-  z: number
 }
 
 export interface ButtonProps {

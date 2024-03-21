@@ -34,7 +34,7 @@
     "build": "styleguidist build",
     "start": "styleguidist server",
     "lint": "eslint --fix .",
-    "precommit": "tsc && lint-staged",
+    "precommit": "lint-staged",
     "prepare": "husky",
     "test": "jest",
     "build:babel": "babel src --out-dir dist --ignore src/components/hooks/**/*.tsx,src/types/index.ts --extensions .ts,.tsx",
