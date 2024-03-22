@@ -1,18 +1,16 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "allowJs": true,
+    "jsx": "react", // Способ компиляции JSX
+    "allowJs": true, // Позволять использовать JavaScript в TypeScript файлах
     "declaration": true, // Создавать исходный файл при компиляции
-    // "declarationDir": "./dist/types", // Папка, куда компилировать исходные файлы
     "target": "ES6", // Версия ECMAScript, которую вы хотите использовать
     "module": "CommonJS", // Тип модулей (например, commonjs, esnext)
-    // "moduleResolution": "Node16", // Тип разрешения модулей (например, classic, node)
-    "outDir": "./dist", // Папка, куда компилировать TypeScript файлы
-    "rootDir": "./src/" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
-    "removeComments": true /* Do not emit comments to output. */,
+    "outDir": "./dist/", // Папка, куда компилировать TypeScript файлы
+    "rootDir": "./src/", // Папка, в которой вы находитесь
+    "removeComments": true, // Удалять комментарии
     "strict": true, // Усиленная типизация
     // "lib": ["dom"], // Подключаемые библиотеки ES6 для компиляции
-    "sourceMap": true, // Создавать исходный файл
+    "sourceMap": true, // Создавать source map
     "esModuleInterop": true, // Взаимодействие с модулями ES6
     "isolatedModules": true, // Использовать один модуль вместо нескольких
     "skipLibCheck": true, // Пропустить проверку объявлений
@@ -27,5 +25,5 @@
     "*.test.tsx",
     "*.test.ts",
     "dist"
-  ]
+  ] // Папки, которые не будут скомпилированы
 }
