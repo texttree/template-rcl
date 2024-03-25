@@ -36,6 +36,12 @@ module.exports = {
           content: description,
         },
       ],
+      // Если вам нужно подключить Tailwind в компонентах то раскомментируйте эти строки
+      // scripts: [
+      //   {
+      //     src: 'https://cdn.tailwindcss.com',
+      //   },
+      // ],
     },
   },
   moduleAliases: { [name]: path.resolve(__dirname, 'src') },
